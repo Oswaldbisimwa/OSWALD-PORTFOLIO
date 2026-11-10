@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion | OSWALD BISIMWA</title>
+
+    <meta name="description"
+          content="Accédez au portfolio professionnel de Oswald Bisimwa.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://accounts.google.com/gsi/client"
+            async defer></script>
+
+    <script src="auth.js" defer></script>
+</head>
+
+<body class="login-page">
+
+    <main class="login-wrapper">
+
+        <div class="login-brand">
+            <div class="brand-logo">O</div>
+            <span>OSWALD<span class="gold">.</span></span>
+        </div>
+
+        <div class="login-card">
+
+            <div class="welcome-icon">✦</div>
+
+            <p class="eyebrow">ESPACE PROFESSIONNEL</p>
+
+            <h1>Bienvenue dans<br>
+                <span>mon univers.</span>
+            </h1>
+
+            <p class="login-description">
+                Découvrez mon parcours, mes compétences,
+                mes réalisations et mes projets numériques.
+            </p>
+
+            <div id="g_id_onload"
+                 data-client_id="COLLE_ICI_TON_ID_CLIENT"
+                 data-callback="handleCredentialResponse"
+                 data-auto_prompt="false">
+            </div>
+
+            <div class="google-button-area">
+                <div class="g_id_signin"
+                     data-type="standard"
+                     data-size="large"
+                     data-theme="outline"
+                     data-text="continue_with"
+                     data-shape="rectangular"
+                     data-logo_alignment="left"
+                     data-width="300">
+                </div>
+            </div>
+
+            <p id="login-message" class="login-message">
+                Connectez-vous avec votre compte Google.
+            </p>
+
+            <div class="login-divider"></div>
+
+            <p class="privacy-text">
+                Authentification Google · Session sécurisée
+            </p>
+
+        </div>
+
+        <footer class="login-footer">
+            © 2026 OSWALD BISIMWA.
+            Tous droits réservés.
+        </footer>
+
+    </main>
+
+</body>
+</html>

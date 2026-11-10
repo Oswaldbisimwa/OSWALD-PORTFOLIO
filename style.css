@@ -1,0 +1,720 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --navy: #071B49;
+    --blue: #0B43C8;
+    --gold: #D9A520;
+    --white: #FFFFFF;
+    --light: #F4F6FA;
+    --text: #25324B;
+    --muted: #8993A7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LOGIN */
+
+.login-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 20%, #173D83 0, transparent 35%),
+        linear-gradient(135deg, #06132E, #071B49 65%, #102C62);
+    color: white;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.brand-logo {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 27px;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 45px 35px;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 24px;
+    background: rgba(255,255,255,.07);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 70px rgba(0,0,0,.25);
+    text-align: center;
+}
+
+.welcome-icon {
+    color: var(--gold);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.login-card h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 37px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.login-card h1 span {
+    color: var(--gold);
+}
+
+.login-description {
+    color: #C3CEE3;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.google-button-area {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.login-message {
+    margin-top: 22px;
+    font-size: 12px;
+    color: #C3CEE3;
+}
+
+.login-divider {
+    height: 1px;
+    background: rgba(255,255,255,.15);
+    margin: 28px 0 18px;
+}
+
+.privacy-text,
+.login-footer {
+    color: #9BAAC6;
+    font-size: 11px;
+}
+
+.login-footer {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* PORTFOLIO */
+
+.portfolio-page {
+    background: var(--white);
+}
+
+.main-header {
+    min-height: 80px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #E8ECF3;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    font-family: 'Outfit', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--navy);
+}
+
+.brand span {
+    color: var(--gold);
+}
+
+.main-header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-header nav a {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.main-header nav a:hover {
+    color: var(--blue);
+}
+
+.logout-button {
+    padding: 11px 18px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 130px 8%;
+    background: linear-gradient(120deg, #071B49, #102E69);
+    color: white;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h1 {
+    max-width: 850px;
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero-description {
+    max-width: 700px;
+    color: #D1DBEE;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.welcome-user {
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 15px 23px;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 9px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+    background: white;
+}
+
+.content-section {
+    padding: 90px 8%;
+}
+
+.content-section h2 {
+    color: var(--navy);
+    font-family: 'Outfit', sans-serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.content-section > p:not(.eyebrow) {
+    max-width: 800px;
+    line-height: 1.9;
+}
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.skill-card,
+.project-card {
+    padding: 30px;
+    border: 1px solid #E8ECF3;
+    border-radius: 15px;
+    background: var(--light);
+    transition: .3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.skill-card h3,
+.project-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.skill-card p,
+.project-card p {
+    color: #66738A;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.project-card > span {
+    display: block;
+    color: var(--gold);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.site-footer {
+    background: var(--navy);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-wrap: wrap;
+        padding: 18px 5%;
+    }
+
+    .main-header nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding: 12px 0;
+        gap: 18px;
+    }
+
+    .main-header nav a {
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 90px 7%;
+    }
+
+    .content-section {
+        padding: 65px 7%;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .login-card {
+        padding: 35px 20px;
+    }
+
+    .login-card h1 {
+        font-size: 31px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --navy: #071B49;
+    --blue: #0B43C8;
+    --gold: #D9A520;
+    --white: #FFFFFF;
+    --light: #F4F6FA;
+    --text: #25324B;
+    --muted: #8993A7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LOGIN */
+
+.login-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 20%, #173D83 0, transparent 35%),
+        linear-gradient(135deg, #06132E, #071B49 65%, #102C62);
+    color: white;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.brand-logo {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 27px;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 45px 35px;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 24px;
+    background: rgba(255,255,255,.07);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 70px rgba(0,0,0,.25);
+    text-align: center;
+}
+
+.welcome-icon {
+    color: var(--gold);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.login-card h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 37px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.login-card h1 span {
+    color: var(--gold);
+}
+
+.login-description {
+    color: #C3CEE3;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.google-button-area {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.login-message {
+    margin-top: 22px;
+    font-size: 12px;
+    color: #C3CEE3;
+}
+
+.login-divider {
+    height: 1px;
+    background: rgba(255,255,255,.15);
+    margin: 28px 0 18px;
+}
+
+.privacy-text,
+.login-footer {
+    color: #9BAAC6;
+    font-size: 11px;
+}
+
+.login-footer {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* PORTFOLIO */
+
+.portfolio-page {
+    background: var(--white);
+}
+
+.main-header {
+    min-height: 80px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #E8ECF3;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    font-family: 'Outfit', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--navy);
+}
+
+.brand span {
+    color: var(--gold);
+}
+
+.main-header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-header nav a {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.main-header nav a:hover {
+    color: var(--blue);
+}
+
+.logout-button {
+    padding: 11px 18px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 130px 8%;
+    background: linear-gradient(120deg, #071B49, #102E69);
+    color: white;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h1 {
+    max-width: 850px;
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero-description {
+    max-width: 700px;
+    color: #D1DBEE;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.welcome-user {
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 15px 23px;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 9px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+    background: white;
+}
+
+.content-section {
+    padding: 90px 8%;
+}
+
+.content-section h2 {
+    color: var(--navy);
+    font-family: 'Outfit', sans-serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.content-section > p:not(.eyebrow) {
+    max-width: 800px;
+    line-height: 1.9;
+}
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.skill-card,
+.project-card {
+    padding: 30px;
+    border: 1px solid #E8ECF3;
+    border-radius: 15px;
+    background: var(--light);
+    transition: .3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.skill-card h3,
+.project-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.skill-card p,
+.project-card p {
+    color: #66738A;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.project-card > span {
+    display: block;
+    color: var(--gold);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.site-footer {
+    background: var(--navy);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-wrap: wrap;
+        padding: 18px 5%;
+    }
+
+    .main-header nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding: 12px 0;
+        gap: 18px;
+    }
+
+    .main-header nav a {
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 90px 7%;
+    }
+
+    .content-section {
+        padding: 65px 7%;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .login-card {
+        padding: 35px 20px;
+    }
+
+    .login-card h1 {
+        font-size: 31px;
+    }
+}
