@@ -42,22 +42,28 @@
             </p>
 
             <div id="g_id_onload"
-                 data-client_id="595362250528-gapv3rq5b3p0m2trh1mnk0rm45pibjkl.apps.googleusercontent.com"
-                 data-callback="handleCredentialResponse"
-                 data-auto_prompt="false">
-            </div>
+     data-client_id="595362250528-gapv3rq5b3p0m2trh1mnk0rm45pibjkl.apps.googleusercontent.com"
+     data-callback="handleGoogleResponse"
+     data-ux_mode="popup">
+</div>
 
-            <div class="google-button-area">
-                <div class="g_id_signin"
-                     data-type="standard"
-                     data-size="large"
-                     data-theme="outline"
-                     data-text="continue_with"
-                     data-shape="rectangular"
-                     data-logo_alignment="left"
-                     data-width="300">
-                </div>
-            </div>
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="continue_with"
+     data-shape="rectangular"
+     data-width="300">
+</div>
+
+<p id="google-status"></p>
+
+<script>
+function handleGoogleResponse(response) {
+    document.getElementById("google-status").textContent =
+        "Réponse Google reçue. Vérification de l'identité nécessaire côté serveur.";
+}
+</script>
 
             <p id="login-message" class="login-message">
                 Connectez-vous avec votre compte Google.
